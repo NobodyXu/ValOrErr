@@ -1,0 +1,42 @@
+.TH "ValOrErr_detector_t" 3 "Sat Nov 21 2020" "ValOrErr" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ValOrErr_detector_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ValOrErr\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "template<template< typename\&.\&.\&. > class variant, template< class > class in_place_type_t, class Ret , class \&.\&.\&. Ts> \fBoperator ValOrErr_t< variant, in_place_type_t, Ret, Ts\&.\&.\&. > &\fP () const noexcept"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Example usage:
+.PP
+Given that: 
+.PP
+.nf
+class A {
+public:
+    A(ValOrErr<void, std::exception> &e);
+};
+class B {
+public:
+};
+
+.fi
+.PP
+.PP
+To tell the different between A (requires ValOrErr) and B, use std::is_constructible_v<type, ValOrErr_detector_t>\&. 
+.PP
+Definition at line 538 of file ValOrErr\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ValOrErr from the source code\&.
