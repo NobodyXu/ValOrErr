@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7evalorerr_5ft_34',['~ValOrErr_t',['../classValOrErr__t.html#a38424b9565f6ba36b31019cd89e085dd',1,'ValOrErr_t']]]
+  ['type_5fname_67',['type_name',['../namespaceutility_1_1ValOrErrImpl.html#aca59124bf1420b860b4151ca422b1376',1,'utility::ValOrErrImpl']]]
 ];

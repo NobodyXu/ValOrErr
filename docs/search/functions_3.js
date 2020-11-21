@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_20t_26_29',['operator T&amp;',['../classValOrErr__t.html#acdaf364ecc153992731f623946c52420',1,'ValOrErr_t']]],
-  ['operator_3d_30',['operator=',['../classValOrErr__t.html#a3126eb7127cd355512f1ddba1ec42d97',1,'ValOrErr_t::operator=(ValOrErr_t&lt; variant2, in_place_type_t2, Ret_t2, Tps... &gt; &amp;r)'],['../classValOrErr__t.html#a9fc653c2315f9afadb2fa76f675b255c',1,'ValOrErr_t::operator=(ValOrErr_t&lt; variant2, in_place_type_t2, Ret_t2, Tps... &gt; &amp;&amp;r)']]]
+  ['is_5fconstructible_57',['is_constructible',['../namespaceutility_1_1ValOrErrImpl.html#a7af0cf77938eb657eb52f2eedf4f5f6b',1,'utility::ValOrErrImpl']]],
+  ['is_5fnothrow_5fconstructible_58',['is_nothrow_constructible',['../namespaceutility_1_1ValOrErrImpl.html#a4e3156e4bfae6e7317d380e34d0167d3',1,'utility::ValOrErrImpl']]]
 ];

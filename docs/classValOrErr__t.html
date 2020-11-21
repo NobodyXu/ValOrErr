@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -112,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa42cf4081d1632075d3e52ee0aa80754"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#aa42cf4081d1632075d3e52ee0aa80754">ValOrErr_t</a> ()=default</td></tr>
 <tr class="separator:aa42cf4081d1632075d3e52ee0aa80754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1254b328f8e6cb91dab00ab5db4e6a64"><td class="memTemplParams" colspan="2">template&lt;class T , class decay_T  = typename std::decay&lt;T&gt;::type, class  = typename std::enable_if&lt;holds_type&lt;decay_T&gt;() &amp;&amp;                                               ValOrErrImpl::is_constructible&lt;decay_T, T&gt;()&gt;::type&gt; </td></tr>
-<tr class="memitem:a1254b328f8e6cb91dab00ab5db4e6a64"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a1254b328f8e6cb91dab00ab5db4e6a64">ValOrErr_t</a> (T &amp;&amp;obj) noexcept(ValOrErrImpl::is_nothrow_constructible&lt; decay_T, T &gt;())</td></tr>
+<tr class="memitem:a1254b328f8e6cb91dab00ab5db4e6a64"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a1254b328f8e6cb91dab00ab5db4e6a64">ValOrErr_t</a> (T &amp;&amp;obj) noexcept(<a class="el" href="namespaceValOrErrImpl.html#a8aa98a25de6a88f3e0b6cfc08753e5cf">ValOrErrImpl::is_nothrow_constructible</a>&lt; decay_T, T &gt;())</td></tr>
 <tr class="separator:a1254b328f8e6cb91dab00ab5db4e6a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb85b2304ba0784f8a98e01c504cfbd"><td class="memTemplParams" colspan="2">template&lt;class T , class ... Args, class  = typename std::enable_if&lt;holds_type&lt;T&gt;() &amp;&amp;                                               std::is_constructible&lt;T, Args...&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:a7bb85b2304ba0784f8a98e01c504cfbd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a7bb85b2304ba0784f8a98e01c504cfbd">ValOrErr_t</a> (in_place_type_t&lt; T &gt; type, Args &amp;&amp;...args) noexcept(std::is_nothrow_constructible&lt; T, Args... &gt;::value)</td></tr>
@@ -123,8 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a729557dd9e7fbc9e71e0359726455167"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename... &gt; class variant2, template&lt; class &gt; class in_place_type_t2, class Ret_t2 , class ... Tps, class  = typename std::enable_if&lt;!std::is_same&lt;                                          ValOrErr_t,                                           ValOrErr_t&lt;variant2, in_place_type_t2, Ret_t2, Tps...&gt;                                      &gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:a729557dd9e7fbc9e71e0359726455167"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a729557dd9e7fbc9e71e0359726455167">ValOrErr_t</a> (<a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant2, in_place_type_t2, Ret_t2, Tps... &gt; &amp;&amp;r)</td></tr>
 <tr class="separator:a729557dd9e7fbc9e71e0359726455167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8037000159c6e78f2076367380160eca"><td class="memItemLeft" align="right" valign="top"><a id="a8037000159c6e78f2076367380160eca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ValOrErr_t</b> (const <a class="el" href="classValOrErr__t.html">ValOrErr_t</a> &amp;)=delete</td></tr>
+<tr class="memitem:a8037000159c6e78f2076367380160eca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a8037000159c6e78f2076367380160eca">ValOrErr_t</a> (const <a class="el" href="classValOrErr__t.html">ValOrErr_t</a> &amp;)=delete</td></tr>
 <tr class="separator:a8037000159c6e78f2076367380160eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69f23bbcc9b167442ef5618bfe9ca31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#ab69f23bbcc9b167442ef5618bfe9ca31">ValOrErr_t</a> (<a class="el" href="classValOrErr__t.html">ValOrErr_t</a> &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; variant_t &gt;::value)</td></tr>
 <tr class="separator:ab69f23bbcc9b167442ef5618bfe9ca31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,11 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e6bdd2591a48e3dd4ecab6e93160c3d"><td class="memTemplParams" colspan="2">template&lt;class ... Args, class  = typename std::enable_if&lt;std::is_constructible&lt;Ret, Args...&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:a3e6bdd2591a48e3dd4ecab6e93160c3d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a3e6bdd2591a48e3dd4ecab6e93160c3d">set_return_value</a> (Args &amp;&amp;...args)</td></tr>
 <tr class="separator:a3e6bdd2591a48e3dd4ecab6e93160c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67cc704bbd892f2ec57b7ebaf96de773"><td class="memItemLeft" align="right" valign="top"><a id="a67cc704bbd892f2ec57b7ebaf96de773"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_exception_set</b> () const noexcept</td></tr>
+<tr class="memitem:a67cc704bbd892f2ec57b7ebaf96de773"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a67cc704bbd892f2ec57b7ebaf96de773">has_exception_set</a> () const noexcept</td></tr>
 <tr class="separator:a67cc704bbd892f2ec57b7ebaf96de773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb82439e0e4ccf0e329ae9348238deb"><td class="memItemLeft" align="right" valign="top"><a id="abfb82439e0e4ccf0e329ae9348238deb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_exception_handled</b> () const noexcept</td></tr>
+<tr class="memitem:abfb82439e0e4ccf0e329ae9348238deb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#abfb82439e0e4ccf0e329ae9348238deb">has_exception_handled</a> () const noexcept</td></tr>
 <tr class="separator:abfb82439e0e4ccf0e329ae9348238deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a629c73c5395fa9498ae8cd75c8d3a446"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a629c73c5395fa9498ae8cd75c8d3a446"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a629c73c5395fa9498ae8cd75c8d3a446">has_exception_type</a> () const noexcept</td></tr>
@@ -158,28 +156,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_exception_handled
 <tr class="memitem:a30437162c2e4d6d9a957a9bca31a2c64"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:a30437162c2e4d6d9a957a9bca31a2c64"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a30437162c2e4d6d9a957a9bca31a2c64">get_return_value</a> () const &amp;</td></tr>
 <tr class="separator:a30437162c2e4d6d9a957a9bca31a2c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae158a648a26889dc946f5bec0e57a65b"><td class="memTemplParams" colspan="2"><a id="ae158a648a26889dc946f5bec0e57a65b"></a>
-template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:ae158a648a26889dc946f5bec0e57a65b"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_return_value</b> () &amp;&amp;</td></tr>
+<tr class="memitem:ae158a648a26889dc946f5bec0e57a65b"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:ae158a648a26889dc946f5bec0e57a65b"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#ae158a648a26889dc946f5bec0e57a65b">get_return_value</a> () &amp;&amp;</td></tr>
 <tr class="separator:ae158a648a26889dc946f5bec0e57a65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb8b8aca1266410c5eda0e9cb5b546c"><td class="memTemplParams" colspan="2"><a id="a9cb8b8aca1266410c5eda0e9cb5b546c"></a>
-template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:a9cb8b8aca1266410c5eda0e9cb5b546c"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_return_value</b> () const &amp;&amp;</td></tr>
+<tr class="memitem:a9cb8b8aca1266410c5eda0e9cb5b546c"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a9cb8b8aca1266410c5eda0e9cb5b546c"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a9cb8b8aca1266410c5eda0e9cb5b546c">get_return_value</a> () const &amp;&amp;</td></tr>
 <tr class="separator:a9cb8b8aca1266410c5eda0e9cb5b546c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdaf364ecc153992731f623946c52420"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:acdaf364ecc153992731f623946c52420"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#acdaf364ecc153992731f623946c52420">operator T&amp;</a> () &amp;</td></tr>
 <tr class="separator:acdaf364ecc153992731f623946c52420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a680f96466dab708be2760089079ff4f8"><td class="memTemplParams" colspan="2"><a id="a680f96466dab708be2760089079ff4f8"></a>
-template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:a680f96466dab708be2760089079ff4f8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator const T &amp;</b> () const &amp;</td></tr>
+<tr class="memitem:a680f96466dab708be2760089079ff4f8"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a680f96466dab708be2760089079ff4f8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a680f96466dab708be2760089079ff4f8">operator const T &amp;</a> () const &amp;</td></tr>
 <tr class="separator:a680f96466dab708be2760089079ff4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9628c739b8d96329f5a2b3a17d7ec1ea"><td class="memTemplParams" colspan="2"><a id="a9628c739b8d96329f5a2b3a17d7ec1ea"></a>
-template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:a9628c739b8d96329f5a2b3a17d7ec1ea"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator T&amp;&amp;</b> () &amp;&amp;</td></tr>
+<tr class="memitem:a9628c739b8d96329f5a2b3a17d7ec1ea"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a9628c739b8d96329f5a2b3a17d7ec1ea"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a9628c739b8d96329f5a2b3a17d7ec1ea">operator T&amp;&amp;</a> () &amp;&amp;</td></tr>
 <tr class="separator:a9628c739b8d96329f5a2b3a17d7ec1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bc0d5a2a6195c75c2747f370d601bd"><td class="memTemplParams" colspan="2"><a id="a83bc0d5a2a6195c75c2747f370d601bd"></a>
-template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:a83bc0d5a2a6195c75c2747f370d601bd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator const T &amp;&amp;</b> () const &amp;&amp;</td></tr>
+<tr class="memitem:a83bc0d5a2a6195c75c2747f370d601bd"><td class="memTemplParams" colspan="2">template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a83bc0d5a2a6195c75c2747f370d601bd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a83bc0d5a2a6195c75c2747f370d601bd">operator const T &amp;&amp;</a> () const &amp;&amp;</td></tr>
 <tr class="separator:a83bc0d5a2a6195c75c2747f370d601bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38424b9565f6ba36b31019cd89e085dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValOrErr__t.html#a38424b9565f6ba36b31019cd89e085dd">~ValOrErr_t</a> () noexcept(false)</td></tr>
 <tr class="separator:a38424b9565f6ba36b31019cd89e085dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,7 +198,7 @@ class ValOrErr_t&lt; variant, in_place_type_t, Ret, Ts &gt;</h3>
 <p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00019">19</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa42cf4081d1632075d3e52ee0aa80754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42cf4081d1632075d3e52ee0aa80754">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42cf4081d1632075d3e52ee0aa80754">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +226,7 @@ template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt;
 </div>
 </div>
 <a id="a1254b328f8e6cb91dab00ab5db4e6a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1254b328f8e6cb91dab00ab5db4e6a64">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1254b328f8e6cb91dab00ab5db4e6a64">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +268,7 @@ template&lt;class T , class decay_T  = typename std::decay&lt;T&gt;::type, class
 </div>
 </div>
 <a id="a7bb85b2304ba0784f8a98e01c504cfbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb85b2304ba0784f8a98e01c504cfbd">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb85b2304ba0784f8a98e01c504cfbd">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +320,7 @@ template&lt;class T , class ... Args, class  = typename std::enable_if&lt;holds_
 </div>
 </div>
 <a id="afc9b387fd6443d4432e53b7402fb8dfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc9b387fd6443d4432e53b7402fb8dfc">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9b387fd6443d4432e53b7402fb8dfc">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +359,7 @@ template&lt;template&lt; typename... &gt; class variant2, template&lt; class &gt
 </div>
 </div>
 <a id="a729557dd9e7fbc9e71e0359726455167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a729557dd9e7fbc9e71e0359726455167">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a729557dd9e7fbc9e71e0359726455167">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,8 +397,36 @@ template&lt;template&lt; typename... &gt; class variant2, template&lt; class &gt
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a8037000159c6e78f2076367380160eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8037000159c6e78f2076367380160eca">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::<a class="el" href="classValOrErr__t.html">ValOrErr_t</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab69f23bbcc9b167442ef5618bfe9ca31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69f23bbcc9b167442ef5618bfe9ca31">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69f23bbcc9b167442ef5618bfe9ca31">&#9670;&nbsp;</a></span>ValOrErr_t() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,6 +655,70 @@ template&lt;class ... Args, class  = typename std::enable_if&lt;std::is_construc
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a67cc704bbd892f2ec57b7ebaf96de773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67cc704bbd892f2ec57b7ebaf96de773">&#9670;&nbsp;</a></span>has_exception_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::has_exception_set </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00363">363</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">return</span> has_exception;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abfb82439e0e4ccf0e329ae9348238deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb82439e0e4ccf0e329ae9348238deb">&#9670;&nbsp;</a></span>has_exception_handled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::has_exception_handled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00367">367</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">return</span> is_exception_handled;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a629c73c5395fa9498ae8cd75c8d3a446"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a629c73c5395fa9498ae8cd75c8d3a446">&#9670;&nbsp;</a></span>has_exception_type()</h2>
 
@@ -698,7 +783,7 @@ template&lt;class F &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Catch and handle the exception.</p>
-<dl class="section post"><dt>Postcondition</dt><dd>has_exception_set() == true, has_exception_handled() == true</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classValOrErr__t.html#a67cc704bbd892f2ec57b7ebaf96de773">has_exception_set()</a> == true, <a class="el" href="classValOrErr__t.html#abfb82439e0e4ccf0e329ae9348238deb">has_exception_handled()</a> == true</dd></dl>
 <p>Example: auto g() -&gt; ValOrErr&lt;void, PageNotFound, std::runtime_error, std::invalid_argument&gt;; void f() { g().Catch([](const std::runtime_error &amp;e) { return; }).Catch([](const auto &amp;e) { throw e; }); } </p>
 
 <p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00398">398</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
@@ -721,7 +806,7 @@ template&lt;class F &gt; </div>
 </div>
 </div>
 <a id="a94175c1a479204e26b47bdfe9f457450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94175c1a479204e26b47bdfe9f457450">&#9670;&nbsp;</a></span>get_return_value() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a94175c1a479204e26b47bdfe9f457450">&#9670;&nbsp;</a></span>get_return_value() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,7 +845,7 @@ template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt
 </div>
 </div>
 <a id="a30437162c2e4d6d9a957a9bca31a2c64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30437162c2e4d6d9a957a9bca31a2c64">&#9670;&nbsp;</a></span>get_return_value() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30437162c2e4d6d9a957a9bca31a2c64">&#9670;&nbsp;</a></span>get_return_value() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -793,6 +878,76 @@ template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        throw_if_hold_exp();</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">return</span> variant_nonmem_f_t::template get&lt;Ret&gt;(v);</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae158a648a26889dc946f5bec0e57a65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae158a648a26889dc946f5bec0e57a65b">&#9670;&nbsp;</a></span>get_return_value() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<div class="memtemplate">
+template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp;&amp; <a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::get_return_value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00457">457</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    {</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        throw_if_hold_exp();</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">return</span> variant_nonmem_f_t::template get&lt;Ret&gt;(std::move(v));</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9cb8b8aca1266410c5eda0e9cb5b546c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb8b8aca1266410c5eda0e9cb5b546c">&#9670;&nbsp;</a></span>get_return_value() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<div class="memtemplate">
+template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp;&amp; <a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::get_return_value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00464">464</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    {</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        throw_if_hold_exp();</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="keywordflow">return</span> variant_nonmem_f_t::template get&lt;Ret&gt;(std::move(v));</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -833,13 +988,118 @@ template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a680f96466dab708be2760089079ff4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680f96466dab708be2760089079ff4f8">&#9670;&nbsp;</a></span>operator const T &amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<div class="memtemplate">
+template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::operator const T &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00484">484</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    {</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        throw_if_hold_exp();</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">return</span> variant_nonmem_f_t::template get&lt;Ret&gt;(v);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9628c739b8d96329f5a2b3a17d7ec1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9628c739b8d96329f5a2b3a17d7ec1ea">&#9670;&nbsp;</a></span>operator T&amp;&amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<div class="memtemplate">
+template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::operator T&amp;&amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00491">491</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    {</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        throw_if_hold_exp();</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">return</span> variant_nonmem_f_t::template get&lt;Ret&gt;(std::move(v));</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a83bc0d5a2a6195c75c2747f370d601bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bc0d5a2a6195c75c2747f370d601bd">&#9670;&nbsp;</a></span>operator const T &amp;&amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; class variant, template&lt; class &gt; class in_place_type_t, class Ret , class ... Ts&gt; </div>
+<div class="memtemplate">
+template&lt;class T  = Ret, class  = typename std::enable_if&lt;!std::is_void&lt;T&gt;::value&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValOrErr__t.html">ValOrErr_t</a>&lt; variant, in_place_type_t, Ret, Ts &gt;::operator const T &amp;&amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ValOrErr_8hpp_source.html#l00498">498</a> of file <a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    {</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        throw_if_hold_exp();</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="keywordflow">return</span> variant_nonmem_f_t::template get&lt;Ret&gt;(std::move(v));</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="ValOrErr_8hpp_source.html">ValOrErr.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 19:58:57 for ValOrErr by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 20:12:30 for ValOrErr by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
