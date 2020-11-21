@@ -172,7 +172,7 @@ class ValOrErr_t {
 # if defined(__EXCEPTIONS) || defined(__cpp_exceptions)
                     throw std::move(e);
 # else
-                    std::fprintf(stderr, "[Exception%s ", ret_exception::impl::type_name<Exception_t>());
+                    std::fprintf(stderr, "[Exception%s ", ValOrErrImpl::type_name<Exception_t>());
 
                     if constexpr(std::is_base_of<std::exception, Exception_t>::value)
                         errx(1, "%s", e.what());
