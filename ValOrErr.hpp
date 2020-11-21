@@ -14,6 +14,7 @@
 #  include <cstdio>
 # endif
 
+namespace utility {
 template <template <typename...> class variant_t, template <class> class in_place_type_t, 
           class Ret, class ...Ts>
 class ValOrErr_t;
@@ -540,5 +541,6 @@ struct ValOrErr_detector_t {
               class Ret, class ...Ts>
     operator ValOrErr_t<variant, in_place_type_t, Ret, Ts...>& () const noexcept;
 };
+} /* namespace utility */
 
 #endif
