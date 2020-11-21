@@ -16,6 +16,7 @@ clean:
 
 gendoc:
 	doxygen Doxyfile
+	cp -r doc/html/ docs
 
 cleandoc:
 	rm -rf docs/*
