@@ -42,7 +42,7 @@ For more information, check [Document].
 #include <err.h>
 
 template <class T>
-auto ftoi(long double f) noexcept -> ValOrErr<T, std::invalid_argument, std::out_of_range>
+auto ftoi(long double f) noexcept -> utility::ValOrErr<T, std::invalid_argument, std::out_of_range>
 {
     if (f == std::numeric_limits<float>::infinity())
         return {std::invalid_argument{"f should not be INF"}};
