@@ -19,6 +19,6 @@ gendoc:
 	rsync -av doc/html/ docs
 
 cleandoc:
-	rm -rf docs/*
+	rm -rf doc/
 
 .PHONY: clean all
