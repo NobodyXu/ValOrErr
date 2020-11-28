@@ -1,5 +1,7 @@
 # ValOrErr
 
+![testing CI](https://github.com/NobodyXu/ValOrErr/workflows/testing%20CI/badge.svg)
+
 Return errors in an unignorable way and have compile-time only Catch, which produces no bloat code with `CXXFLAGS=-O2 -Wl,--strip-all`.
 
 [Document]
